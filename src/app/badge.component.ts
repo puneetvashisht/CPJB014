@@ -17,6 +17,7 @@ export class BadgeComponent implements OnInit {
 
 
     incrementCount(){
+        console.log(this.count)
         this.count++;
     }
     ngOnInit() { 
