@@ -1,7 +1,19 @@
 package com.cts.tasktrackerproj.entities;
 
-public class Course {
+import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity(name="Course3")
+public class Course implements Serializable{
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	int id;
 	String title;
 	String summary;
